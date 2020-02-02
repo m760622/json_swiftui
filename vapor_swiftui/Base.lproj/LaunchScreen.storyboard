@@ -15,18 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO SWIFTUI / JSON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tt9-Ee-wWk">
+                                <rect key="frame" x="116" y="219" width="182" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resistance.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qex-7n-hk9">
-                                <rect key="frame" x="20" y="295" width="374" height="306"/>
+                                <rect key="frame" x="20" y="247" width="374" height="368"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="ICj-hA-QVr"/>
-                                    <constraint firstAttribute="height" constant="306" id="it3-im-tJH"/>
+                                    <constraint firstAttribute="height" constant="368" id="4Dy-ch-kBs"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Qex-7n-hk9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k3w-7j-ccb"/>
-                            <constraint firstItem="Qex-7n-hk9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qVF-qz-XPY"/>
+                            <constraint firstItem="Qex-7n-hk9" firstAttribute="centerX" secondItem="tt9-Ee-wWk" secondAttribute="centerX" id="5jX-a2-0kR"/>
+                            <constraint firstItem="Qex-7n-hk9" firstAttribute="top" secondItem="tt9-Ee-wWk" secondAttribute="bottom" constant="7.5" id="6Q0-H7-SCu"/>
+                            <constraint firstItem="Qex-7n-hk9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Ajd-Lt-K8n"/>
+                            <constraint firstItem="tt9-Ee-wWk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lp5-S8-epc"/>
+                            <constraint firstItem="tt9-Ee-wWk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="U7E-PK-USt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
