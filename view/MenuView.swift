@@ -77,18 +77,9 @@ func getPersoneFromApi () -> Array<HeroObj> {
 
 struct MenuView: View {
     
-    class found: ObservableObject {
-        
-        @objc static func getInfoFromCD () {
-            var aRray = getPersoneFromApi()
-        }
-        
-    }
-    
     init() {
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
-        NotificationCenter.default.addObserver(self, selector: #selector(found.getInfoFromCD), name: Notification.Name("InfoWasUpdated"), object: nil)
     }
 
     @State var letsSeeSomethingElse: Bool = false
@@ -123,15 +114,6 @@ struct MenuView_Previews: PreviewProvider {
         MenuView()
     }
 }
-
-func getStringFromArray (ar: Array<Int>) -> String {
-    var aText = ""
-    for i in ar {
-        aText += String(i) + " "
-    }
-    return aText
-}
-
 
 struct HeroesPage: Codable {
     
