@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4E53A223E5D8FF0031235A /* resistance.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E53A123E5D8FF0031235A /* resistance.png */; };
+		0A4E53A423E603860031235A /* CDCommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E53A323E603860031235A /* CDCommonMethods.swift */; };
 		0A4F528723E2B474006A3586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F528623E2B474006A3586 /* AppDelegate.swift */; };
 		0A4F528923E2B474006A3586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F528823E2B474006A3586 /* SceneDelegate.swift */; };
 		0A4F528C23E2B474006A3586 /* vapor_swiftui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F528A23E2B474006A3586 /* vapor_swiftui.xcdatamodeld */; };
@@ -14,10 +16,14 @@
 		0A4F529023E2B477006A3586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F528F23E2B477006A3586 /* Assets.xcassets */; };
 		0A4F529323E2B477006A3586 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F529223E2B477006A3586 /* Preview Assets.xcassets */; };
 		0A4F529623E2B477006A3586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F529423E2B477006A3586 /* LaunchScreen.storyboard */; };
+		0A4F52A123E34019006A3586 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52A023E34019006A3586 /* MenuView.swift */; };
+		0A4F52A523E4D629006A3586 /* InfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F52A423E4D628006A3586 /* InfoObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A4F528323E2B474006A3586 /* vapor_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vapor_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4E53A123E5D8FF0031235A /* resistance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = resistance.png; path = pic_swiftui/resistance.png; sourceTree = SOURCE_ROOT; };
+		0A4E53A323E603860031235A /* CDCommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCommonMethods.swift; sourceTree = "<group>"; };
+		0A4F528323E2B474006A3586 /* json_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4F528623E2B474006A3586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4F528823E2B474006A3586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A4F528B23E2B474006A3586 /* vapor_swiftui.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vapor_swiftui.xcdatamodel; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		0A4F529223E2B477006A3586 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A4F529523E2B477006A3586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4F529723E2B477006A3586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4F52A023E34019006A3586 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		0A4F52A423E4D628006A3586 /* InfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4E53A523E6052A0031235A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F52A423E4D628006A3586 /* InfoObject.swift */,
+				0A4F528D23E2B474006A3586 /* ContentView.swift */,
+				0A4F52A023E34019006A3586 /* MenuView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		0A4E53A623E6058A0031235A /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E53A323E603860031235A /* CDCommonMethods.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
 		0A4F527A23E2B474006A3586 = {
 			isa = PBXGroup;
 			children = (
+				0A4E53A623E6058A0031235A /* Methods */,
+				0A4E53A523E6052A0031235A /* view */,
+				0A4F529D23E30061006A3586 /* pisc */,
 				0A4F528523E2B474006A3586 /* vapor_swiftui */,
 				0A4F528423E2B474006A3586 /* Products */,
 			);
@@ -50,7 +79,7 @@
 		0A4F528423E2B474006A3586 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A4F528323E2B474006A3586 /* vapor_swiftui.app */,
+				0A4F528323E2B474006A3586 /* json_swiftui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +89,6 @@
 			children = (
 				0A4F528623E2B474006A3586 /* AppDelegate.swift */,
 				0A4F528823E2B474006A3586 /* SceneDelegate.swift */,
-				0A4F528D23E2B474006A3586 /* ContentView.swift */,
 				0A4F528F23E2B477006A3586 /* Assets.xcassets */,
 				0A4F529423E2B477006A3586 /* LaunchScreen.storyboard */,
 				0A4F529723E2B477006A3586 /* Info.plist */,
@@ -78,12 +106,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0A4F529D23E30061006A3586 /* pisc */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E53A123E5D8FF0031235A /* resistance.png */,
+			);
+			path = pisc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A4F528223E2B474006A3586 /* vapor_swiftui */ = {
+		0A4F528223E2B474006A3586 /* json_swiftui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A4F529A23E2B477006A3586 /* Build configuration list for PBXNativeTarget "vapor_swiftui" */;
+			buildConfigurationList = 0A4F529A23E2B477006A3586 /* Build configuration list for PBXNativeTarget "json_swiftui" */;
 			buildPhases = (
 				0A4F527F23E2B474006A3586 /* Sources */,
 				0A4F528023E2B474006A3586 /* Frameworks */,
@@ -93,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = vapor_swiftui;
+			name = json_swiftui;
 			productName = vapor_swiftui;
-			productReference = 0A4F528323E2B474006A3586 /* vapor_swiftui.app */;
+			productReference = 0A4F528323E2B474006A3586 /* json_swiftui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0A4F527E23E2B474006A3586 /* Build configuration list for PBXProject "vapor_swiftui" */;
+			buildConfigurationList = 0A4F527E23E2B474006A3586 /* Build configuration list for PBXProject "json_swiftui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A4F528223E2B474006A3586 /* vapor_swiftui */,
+				0A4F528223E2B474006A3586 /* json_swiftui */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +175,7 @@
 				0A4F529623E2B477006A3586 /* LaunchScreen.storyboard in Resources */,
 				0A4F529323E2B477006A3586 /* Preview Assets.xcassets in Resources */,
 				0A4F529023E2B477006A3586 /* Assets.xcassets in Resources */,
+				0A4E53A223E5D8FF0031235A /* resistance.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4F52A523E4D629006A3586 /* InfoObject.swift in Sources */,
+				0A4F52A123E34019006A3586 /* MenuView.swift in Sources */,
 				0A4F528C23E2B474006A3586 /* vapor_swiftui.xcdatamodeld in Sources */,
+				0A4E53A423E603860031235A /* CDCommonMethods.swift in Sources */,
 				0A4F528723E2B474006A3586 /* AppDelegate.swift in Sources */,
 				0A4F528E23E2B474006A3586 /* ContentView.swift in Sources */,
 				0A4F528923E2B474006A3586 /* SceneDelegate.swift in Sources */,
@@ -297,10 +337,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zimoykin.vapor-swiftui";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zimoykin.json-swiftui";
+				PRODUCT_NAME = json_swiftui;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,17 +357,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "zimoykin.vapor-swiftui";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "zimoykin.json-swiftui";
+				PRODUCT_NAME = json_swiftui;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A4F527E23E2B474006A3586 /* Build configuration list for PBXProject "vapor_swiftui" */ = {
+		0A4F527E23E2B474006A3586 /* Build configuration list for PBXProject "json_swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A4F529823E2B477006A3586 /* Debug */,
@@ -336,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A4F529A23E2B477006A3586 /* Build configuration list for PBXNativeTarget "vapor_swiftui" */ = {
+		0A4F529A23E2B477006A3586 /* Build configuration list for PBXNativeTarget "json_swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A4F529B23E2B477006A3586 /* Debug */,
